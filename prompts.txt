@@ -1,0 +1,156 @@
+1️⃣ Homepage Prompt
+
+Create a premium buisness luxury countryside hotel homepage for Kings Court Hotel.
+Use deep forest green (#1F3A2E), warm cream (#F5F1E8), and muted gold (#C2A45E).
+Include full-screen hero section with background image, overlay heading “A Tudor Country Escape Near Stratford-upon-Avon”, primary CTA “Book Your Stay”, and secondary CTA “Explore Rooms”.
+Add booking bar (check-in, check-out, guests) with JavaScript validation.
+Include featured rooms grid, weddings highlight section, dining preview, testimonial slider, location map, and elegant footer.
+
+2️⃣ Rooms Overview Page Prompt
+
+Design a Rooms page displaying all room categories in a 3-column responsive grid.
+Each room card must include image, short description, price starting from, and “View Details” button.
+Add filter options (Standard, Superior, Family) using JavaScript.
+Maintain luxury typography and subtle hover animations.
+
+3️⃣ Individual Room Detail Page Prompt
+
+Create a detailed room page layout with image gallery slider, room description, amenities list, price breakdown, and availability check form.
+Add sticky “Book Now” sidebar.
+Include icons styled in gold.
+Use smooth transitions and lightbox gallery.
+
+4️⃣ Dining Page Prompt
+
+Design a Dining page featuring restaurant and Twisted Boot Bar sections.
+Include elegant hero image, opening hours, downloadable menu button, and reservation form.
+Use gold accents for section dividers.
+Add subtle parallax effect.
+
+5️⃣ Weddings Page Prompt
+
+Create a luxurious Weddings page focused on emotional storytelling.
+Include large elegant imagery, venue capacity details, wedding packages, testimonial quotes, and enquiry form.
+Use soft cream background with gold borders.
+Make it feel premium and romantic.
+
+6️⃣ Events & Conferences Page Prompt
+
+Design a corporate-friendly Events page.
+Highlight meeting rooms, capacities, facilities (projector, Wi-Fi, catering), and booking enquiry form.
+Use structured grid layout and clear typography.
+
+7️⃣ Special Offers Page Prompt
+
+Create a promotional Offers page showing seasonal discounts and packages.
+Include countdown timer (JavaScript).
+Highlight “Book Direct & Save 10%”.
+Use gold accent for urgency labels.
+
+8️⃣ Gallery Page Prompt
+
+Design a gallery page with masonry grid layout.
+Include filter tabs (Rooms, Dining, Weddings, Exterior).
+Add JavaScript lightbox effect on click.
+Ensure responsive behavior.
+
+9️⃣ About Us Page Prompt
+
+Create an About page telling the history of the Tudor farmhouse hotel.
+Include heritage storytelling section, mission statement, owner message, and timeline layout.
+Use serif headings and elegant spacing.
+
+🔟 Location Page Prompt
+
+Design a Location page with embedded Google Map.
+Highlight proximity to Stratford-upon-Avon, Warwick Castle, and countryside attractions.
+Include travel directions and parking information.
+
+1️⃣1️⃣ Testimonials Page Prompt
+
+Create a dedicated Testimonials page with star ratings, guest reviews, and slider functionality.
+Add animated counters (e.g., 4.5★ Rating, 60+ Rooms).
+Use subtle fade animations.
+
+1️⃣2️⃣ Contact Page Prompt
+
+Design a Contact page with enquiry form (name, email, phone, message).
+Add form validation using JavaScript.
+Include contact details and social links.
+Keep layout clean and professional.
+
+1️⃣3️⃣ Booking Page Prompt
+
+Create a dedicated Booking page with date picker, room selection dropdown, guest counter, and pricing summary.
+Add JavaScript price calculation simulation.
+Highlight secure booking badge.
+
+1️⃣4️⃣ FAQ Page Prompt
+
+Design a Frequently Asked Questions page with accordion-style expandable sections.
+Include questions about parking, pets, check-in times, cancellations, weddings.
+Use smooth expand/collapse animations.
+
+1️⃣5️⃣ Blog / Local Attractions Page Prompt
+
+Create a blog-style page showcasing local attractions near the hotel.
+Use card-based layout with featured image, short summary, and “Read More”.
+Optimize headings for SEO.
+
+1️⃣6️⃣ Single Blog Post Page Prompt
+
+Design a detailed blog article layout with large header image, structured headings (H2, H3), embedded images, and related posts section.
+Use clean typography and strong readability.
+
+1️⃣7️⃣ Privacy Policy Page Prompt
+
+Create a structured legal page layout with proper heading hierarchy, clean spacing, and readable formatting.
+Ensure accessibility compliance and professional styling.
+
+1️⃣8️⃣ Terms & Conditions Page Prompt
+
+Design a formal terms page including booking policies, cancellation terms, payment rules.
+Use minimalist layout with consistent typography.
+
+1️⃣9️⃣ 404 Error Page Prompt
+
+Create a custom 404 page with elegant design.
+Include message “Looks like you’re lost in the countryside” and button back to homepage.
+Maintain brand colors.
+
+2️⃣0️⃣ Footer System Prompt
+
+Design a reusable global footer component.
+Include:
+
+Quick links
+
+Contact info
+
+Newsletter signup
+
+Social icons
+
+Copyright
+
+Dark green background with gold highlights
+
+Make it consistent across all pages.
+
+Strategic Advice
+
+Do not build 20 random pages.
+
+Build:
+
+Reusable header component
+
+Reusable footer component
+
+Reusable card system
+
+Reusable button system
+
+Consistent spacing scale
+
+This will make the site look professionally engineered.

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Kings Court Hotel — A Tudor country escape near Stratford-upon-Avon. Luxury rooms, fine dining, weddings and events in the heart of Warwickshire." />
+    <meta name="keywords"
+        content="luxury hotel, Stratford-upon-Avon, Tudor hotel, countryside hotel, Warwickshire, weddings, fine dining" />
+    <meta property="og:title" content="Kings Court Hotel — A Tudor Country Escape" />
+    <meta property="og:description"
+        content="Experience timeless luxury in the heart of Warwickshire. Book your stay at Kings Court Hotel." />
+    <meta property="og:type" content="website" />
+    <title>Kings Court Hotel | A Tudor Country Escape Near Stratford-upon-Avon</title>
+
+    <!-- Favicon placeholder -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+    <nav class="nav nav--transparent" id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav__logo" aria-label="Kings Court Hotel Home">
+            <span class="nav__logo-name">Kings Court</span>
+            <span class="nav__logo-tagline">Hotel &amp; Estate</span>
+        </a>
+
+        <ul class="nav__links" role="list">
+            <li><a href="rooms.html" class="nav__link">Rooms</a></li>
+            <li><a href="dining.html" class="nav__link">Dining</a></li>
+            <li><a href="weddings.html" class="nav__link">Weddings</a></li>
+            <li><a href="events.html" class="nav__link">Events</a></li>
+            <li><a href="offers.html" class="nav__link">Offers</a></li>
+            <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+        </ul>
+
+        <a href="booking.html" class="nav__cta" id="nav-book-btn">Book Now</a>
+
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
+        <a href="rooms.html" class="nav__mobile-link">Rooms</a>
+        <a href="dining.html" class="nav__mobile-link">Dining</a>
+        <a href="weddings.html" class="nav__mobile-link">Weddings</a>
+        <a href="events.html" class="nav__mobile-link">Events</a>
+        <a href="offers.html" class="nav__mobile-link">Offers</a>
+        <a href="gallery.html" class="nav__mobile-link">Gallery</a>
+        <a href="about.html" class="nav__mobile-link">About</a>
+        <a href="contact.html" class="nav__mobile-link">Contact</a>
+        <a href="booking.html" class="btn btn--primary" style="margin-top:1rem;">Book Your Stay</a>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero">
+
+        <!-- Background Image -->
+        <div class="hero__bg">
+            <img src="assets/images/hero/hero-main.jpg"
+                alt="Kings Court Hotel — Tudor manor house surrounded by manicured English gardens"
+                fetchpriority="high" />
+        </div>
+
+        <!-- Overlay -->
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <!-- Content -->
+        <div class="hero__content">
+            <span class="hero__eyebrow">Welcome to</span>
+            <h1 class="hero__title">A Tudor Country Escape<br>Near Stratford-upon-Avon</h1>
+            <p class="hero__subtitle">
+                Timeless elegance · Warwickshire countryside · Unforgettable experiences
+            </p>
+            <div class="hero__ctas">
+                <a href="booking.html" class="btn btn--primary" id="hero-book-btn">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                    Book Your Stay
+                </a>
+                <a href="rooms.html" class="btn btn--secondary" id="hero-rooms-btn">
+                    Explore Rooms
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Booking Bar -->
+        <div class="hero__booking">
+            <form class="booking-bar" id="booking-bar-form" novalidate aria-label="Quick booking">
+
+                <div class="booking-bar__field" id="field-checkin">
+                    <label class="booking-bar__label" for="booking-checkin">Check-In</label>
+                    <input class="booking-bar__input" type="date" id="booking-checkin" name="checkin"
+                        aria-required="true" />
+                    <span class="booking-bar__error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="booking-bar__field" id="field-checkout">
+                    <label class="booking-bar__label" for="booking-checkout">Check-Out</label>
+                    <input class="booking-bar__input" type="date" id="booking-checkout" name="checkout"
+                        aria-required="true" />
+                    <span class="booking-bar__error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="booking-bar__field" id="field-guests">
+                    <label class="booking-bar__label" for="booking-guests">Guests</label>
+                    <select class="booking-bar__select" id="booking-guests" name="guests" aria-required="true">
+                        <option value="">Select guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests</option>
+                    </select>
+                    <span class="booking-bar__error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="btn btn--primary booking-bar__btn" id="booking-bar-submit">
+                    Check Availability
+                </button>
+
+            </form>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero__scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       TRUST STRIP
+  ═══════════════════════════════════════ -->
+    <section class="trust-strip" aria-label="Awards and recognition" style="margin-top: 3rem;">
+        <div class="container">
+            <div class="trust-strip__inner">
+                <div class="trust-item reveal">
+                    <span class="trust-item__icon" aria-hidden="true">⭐</span>
+                    <span class="trust-item__text">AA 4-Star<br>Rated Hotel</span>
+                </div>
+                <div class="trust-item reveal reveal--delay-1">
+                    <span class="trust-item__icon" aria-hidden="true">🏆</span>
+                    <span class="trust-item__text">Best Country<br>Hotel 2024</span>
+                </div>
+                <div class="trust-item reveal reveal--delay-2">
+                    <span class="trust-item__icon" aria-hidden="true">🍽️</span>
+                    <span class="trust-item__text">Award-Winning<br>Restaurant</span>
+                </div>
+                <div class="trust-item reveal reveal--delay-3">
+                    <span class="trust-item__icon" aria-hidden="true">💍</span>
+                    <span class="trust-item__text">Licensed Wedding<br>Venue</span>
+                </div>
+                <div class="trust-item reveal reveal--delay-4">
+                    <span class="trust-item__icon" aria-hidden="true">🌿</span>
+                    <span class="trust-item__text">Eco-Certified<br>Property</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       INTRO / ABOUT SECTION
+  ═══════════════════════════════════════ -->
+    <section class="intro-section section" id="about-intro" aria-labelledby="intro-heading">
+        <div class="container">
+            <div class="intro-section__inner">
+
+                <!-- Images -->
+                <div class="intro-section__image-wrap reveal">
+                    <div class="intro-section__image-main img-zoom">
+                        <img src="assets/images/hero/hero-main.jpg"
+                            alt="Kings Court Hotel exterior — Tudor manor house at golden hour" loading="lazy" />
+                    </div>
+                    <div class="intro-section__image-accent img-zoom">
+                        <img src="assets/images/rooms/room-classic.jpg" alt="Cosy luxury bedroom with stone fireplace"
+                            loading="lazy" />
+                    </div>
+                    <div class="intro-section__badge" aria-label="Established 1642">
+                        <span class="intro-section__badge-num">1642</span>
+                        <span class="intro-section__badge-text">Est.</span>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="intro-section__content reveal reveal--delay-2">
+                    <span class="section-label">Our Story</span>
+                    <span class="script-accent">Where History Meets Luxury</span>
+                    <h2 id="intro-heading">A Timeless Retreat in the Heart of England</h2>
+                    <div class="gold-line gold-line--left"></div>
+                    <p>
+                        Nestled within 40 acres of manicured Warwickshire countryside, Kings Court Hotel is a
+                        magnificent Tudor manor house dating back to 1642. Just minutes from the birthplace of
+                        Shakespeare, our estate offers an unparalleled blend of historic grandeur and
+                        contemporary luxury.
+                    </p>
+                    <p>
+                        Whether you're seeking a romantic escape, a family celebration, or a corporate retreat,
+                        our dedicated team ensures every moment at Kings Court is extraordinary.
+                    </p>
+
+                    <div class="intro-section__features">
+                        <div class="intro-feature">
+                            <span class="intro-feature__icon" aria-hidden="true"><i class="fa-solid fa-bed"></i></span>
+                            <span class="intro-feature__text">38 individually designed rooms &amp; suites</span>
+                        </div>
+                        <div class="intro-feature">
+                            <span class="intro-feature__icon" aria-hidden="true"><i
+                                    class="fa-solid fa-utensils"></i></span>
+                            <span class="intro-feature__text">Award-winning fine dining restaurant</span>
+                        </div>
+                        <div class="intro-feature">
+                            <span class="intro-feature__icon" aria-hidden="true"><i class="fa-solid fa-tree"></i></span>
+                            <span class="intro-feature__text">40 acres of private grounds &amp; gardens</span>
+                        </div>
+                        <div class="intro-feature">
+                            <span class="intro-feature__icon" aria-hidden="true"><i class="fa-solid fa-spa"></i></span>
+                            <span class="intro-feature__text">Luxury spa &amp; wellness facilities</span>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn--ghost-gold" id="intro-about-btn">
+                        Discover Our Story
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       FEATURED ROOMS
+  ═══════════════════════════════════════ -->
+    <section class="rooms-section section" id="rooms" aria-labelledby="rooms-heading">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <span class="section-label">Accommodation</span>
+                <span class="script-accent">Rest &amp; Restore</span>
+                <h2 id="rooms-heading">Our Rooms &amp; Suites</h2>
+                <div class="gold-line"></div>
+                <p>Each of our 38 rooms is individually designed, blending Tudor character with modern comforts for an
+                    unforgettable night's rest.</p>
+            </div>
+
+            <div class="grid grid--3" data-stagger>
+
+                <!-- Room 1: Deluxe Room -->
+                <article class="room-card reveal">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-deluxe.jpg"
+                            alt="Deluxe Room with four-poster bed and stone fireplace" loading="lazy" />
+                        <span class="room-card__badge">Most Popular</span>
+                    </div>
+                    <div class="room-card__body">
+                        <h3 class="room-card__title">Deluxe Room</h3>
+                        <p class="room-card__desc">
+                            Beautifully appointed with a four-poster bed, exposed oak beams, and a working stone
+                            fireplace. Mullioned windows frame views of the walled garden.
+                        </p>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">King Bed</span>
+                            <span class="room-card__amenity">Fireplace</span>
+                            <span class="room-card__amenity">Garden View</span>
+                            <span class="room-card__amenity">Free Wi-Fi</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£195</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=deluxe" class="btn btn--dark" id="room-deluxe-btn">View
+                                Room</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Room 2: Signature Suite -->
+                <article class="room-card reveal reveal--delay-1">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-suite.jpg"
+                            alt="Signature Suite with green velvet Chesterfield and roaring fire" loading="lazy" />
+                        <span class="room-card__badge">Signature</span>
+                    </div>
+                    <div class="room-card__body">
+                        <h3 class="room-card__title">Signature Suite</h3>
+                        <p class="room-card__desc">
+                            Our grandest accommodation. A separate sitting room with Chesterfield sofas, antique writing
+                            desk, and a private terrace overlooking the estate grounds.
+                        </p>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">Sitting Room</span>
+                            <span class="room-card__amenity">Private Terrace</span>
+                            <span class="room-card__amenity">Butler Service</span>
+                            <span class="room-card__amenity">Roll-top Bath</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£395</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=suite" class="btn btn--dark" id="room-suite-btn">View
+                                Room</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Room 3: Classic Room -->
+                <article class="room-card reveal reveal--delay-2">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-classic.jpg"
+                            alt="Classic Room with stone walls and window seat" loading="lazy" />
+                    </div>
+                    <div class="room-card__body">
+                        <h3 class="room-card__title">Classic Room</h3>
+                        <p class="room-card__desc">
+                            Intimate and cosy, with original stone walls, exposed timber beams, and a window seat
+                            overlooking the courtyard garden. Perfect for a romantic retreat.
+                        </p>
+                        <div class="room-card__amenities">
+                            <span class="room-card__amenity">King Bed</span>
+                            <span class="room-card__amenity">Stone Walls</span>
+                            <span class="room-card__amenity">Courtyard View</span>
+                            <span class="room-card__amenity">Free Wi-Fi</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£145</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=classic" class="btn btn--dark" id="room-classic-btn">View
+                                Room</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="rooms.html" class="btn btn--ghost-gold" id="all-rooms-btn">
+                    View All Rooms &amp; Suites
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       WEDDINGS SECTION
+  ═══════════════════════════════════════ -->
+    <section class="weddings-section" id="weddings" aria-labelledby="weddings-heading">
+
+        <div class="weddings-section__bg">
+            <img src="assets/images/weddings/wedding-main.jpg"
+                alt="Wedding ceremony in the grounds of Kings Court Hotel" loading="lazy" />
+        </div>
+        <div class="weddings-section__overlay" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="weddings-section__content reveal">
+                <span class="section-label">Weddings &amp; Celebrations</span>
+                <span class="script-accent">Your Perfect Day</span>
+                <h2 id="weddings-heading">A Fairytale Setting for Your Wedding</h2>
+                <div class="gold-line gold-line--left"></div>
+                <p>
+                    From intimate ceremonies to grand celebrations, Kings Court Hotel provides an
+                    enchanting backdrop for your most important day. Our dedicated wedding team will
+                    craft every detail to perfection.
+                </p>
+
+                <ul class="weddings-features" aria-label="Wedding features">
+                    <li class="weddings-feature">Licensed for civil ceremonies &amp; partnerships</li>
+                    <li class="weddings-feature">Exclusive use of the estate available</li>
+                    <li class="weddings-feature">Capacity for up to 200 guests</li>
+                    <li class="weddings-feature">Award-winning catering &amp; fine wines</li>
+                    <li class="weddings-feature">Dedicated wedding coordinator</li>
+                </ul>
+
+                <div style="display:flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="weddings.html" class="btn btn--primary" id="weddings-learn-btn">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                        Explore Weddings
+                    </a>
+                    <a href="contact.html" class="btn btn--secondary" id="weddings-enquire-btn">
+                        Make an Enquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       DINING SECTION
+  ═══════════════════════════════════════ -->
+    <section class="dining-section section" id="dining" aria-labelledby="dining-heading">
+        <div class="container">
+            <div class="dining-section__inner">
+
+                <!-- Image -->
+                <div class="dining-section__image reveal img-zoom">
+                    <img src="assets/images/dining/dining-main.jpg" alt="The Garden Restaurant at Kings Court Hotel"
+                        loading="lazy" />
+                </div>
+
+                <!-- Content -->
+                <div class="dining-section__content reveal reveal--delay-2">
+                    <span class="section-label" style="color: var(--clr-gold-light);">Fine Dining</span>
+                    <span class="script-accent">Taste the Estate</span>
+                    <h2 id="dining-heading">The Garden Restaurant</h2>
+                    <div class="gold-line gold-line--left"></div>
+                    <p>
+                        Our award-winning restaurant celebrates the finest seasonal produce from our kitchen
+                        garden and local Warwickshire farms. Head Chef James Whitmore crafts menus that
+                        honour British culinary tradition with a contemporary twist.
+                    </p>
+
+                    <div class="dining-highlights">
+                        <div class="dining-highlight">
+                            <div class="dining-highlight__icon">🌿</div>
+                            <div class="dining-highlight__title">Garden to Table</div>
+                            <p class="dining-highlight__text">Fresh produce from our 2-acre kitchen garden</p>
+                        </div>
+                        <div class="dining-highlight">
+                            <div class="dining-highlight__icon">🍷</div>
+                            <div class="dining-highlight__title">Wine Cellar</div>
+                            <p class="dining-highlight__text">Over 300 curated wines from around the world</p>
+                        </div>
+                        <div class="dining-highlight">
+                            <div class="dining-highlight__icon">☕</div>
+                            <div class="dining-highlight__title">Afternoon Tea</div>
+                            <p class="dining-highlight__text">Traditional English afternoon tea daily</p>
+                        </div>
+                        <div class="dining-highlight">
+                            <div class="dining-highlight__icon">🥃</div>
+                            <div class="dining-highlight__title">The Boot Bar</div>
+                            <p class="dining-highlight__text">Craft ales, fine spirits &amp; light bites</p>
+                        </div>
+                    </div>
+
+                    <a href="dining.html" class="btn btn--primary" id="dining-btn">
+                        Explore Dining
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       OFFERS STRIP
+  ═══════════════════════════════════════ -->
+    <section class="offers-strip" id="offers" aria-labelledby="offers-heading">
+        <div class="container">
+            <div class="offers-strip__inner">
+                <div class="offers-strip__text">
+                    <h3 id="offers-heading">Exclusive Seasonal Offers</h3>
+                    <p>Save up to 30% on selected dates — including dinner, bed &amp; breakfast packages.</p>
+                </div>
+                <a href="offers.html" class="btn btn--dark" id="offers-strip-btn">
+                    View All Offers
+                    <i class="fa-solid fa-tag" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════ -->
+    <section class="testimonials-section section" id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <span class="section-label">Guest Reviews</span>
+                <span class="script-accent">What Our Guests Say</span>
+                <h2 id="testimonials-heading">Unforgettable Experiences</h2>
+                <div class="gold-line"></div>
+            </div>
+
+            <!-- Slider -->
+            <div class="testimonial-slider" data-slider aria-label="Guest testimonials" tabindex="0">
+                <div class="testimonial-track">
+
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                            </div>
+                            <blockquote class="testimonial-card__quote">
+                                "Kings Court is simply magical. From the moment we arrived, the staff made us feel like
+                                royalty. The four-poster bed, the crackling fire, the most extraordinary dinner — we
+                                never wanted to leave."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar" aria-hidden="true">S</div>
+                                <div>
+                                    <div class="testimonial-card__name">Sarah &amp; James Thornton</div>
+                                    <div class="testimonial-card__meta">Anniversary Stay · Deluxe Room</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                            </div>
+                            <blockquote class="testimonial-card__quote">
+                                "We had our wedding here in September and it was beyond our wildest dreams. The grounds
+                                are breathtaking, the food was exceptional, and our coordinator Charlotte was an
+                                absolute star throughout."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar" aria-hidden="true">E</div>
+                                <div>
+                                    <div class="testimonial-card__name">Emily &amp; Robert Clarke</div>
+                                    <div class="testimonial-card__meta">Wedding Celebration · September 2024</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                            </div>
+                            <blockquote class="testimonial-card__quote">
+                                "The Garden Restaurant alone is worth the trip. Chef Whitmore's tasting menu was the
+                                finest meal I've had in England. Paired with wines from their extraordinary cellar — an
+                                evening I'll never forget."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar" aria-hidden="true">M</div>
+                                <div>
+                                    <div class="testimonial-card__name">Michael Hargreaves</div>
+                                    <div class="testimonial-card__meta">Dining Guest · TripAdvisor Review</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                                <span aria-hidden="true">★</span>
+                            </div>
+                            <blockquote class="testimonial-card__quote">
+                                "We've stayed at many country house hotels across the UK, but Kings Court stands apart.
+                                The attention to detail, the warmth of the staff, and the sheer beauty of the estate are
+                                unmatched."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar" aria-hidden="true">A</div>
+                                <div>
+                                    <div class="testimonial-card__name">Amanda &amp; David Forsythe</div>
+                                    <div class="testimonial-card__meta">Signature Suite · Returning Guests</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.testimonial-track -->
+
+                <!-- Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" data-slider-prev aria-label="Previous testimonial">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="slider-dots" role="tablist" aria-label="Testimonial navigation"></div>
+                    <button class="slider-btn" data-slider-next aria-label="Next testimonial">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+            </div><!-- /.testimonial-slider -->
+
+            <div class="text-center" style="margin-top: 2.5rem;">
+                <a href="testimonials.html" class="btn btn--ghost-gold" id="all-reviews-btn">
+                    Read All Reviews
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       LOCATION SECTION
+  ═══════════════════════════════════════ -->
+    <section class="location-section section" id="location" aria-labelledby="location-heading">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <span class="section-label">Find Us</span>
+                <span class="script-accent">Getting Here</span>
+                <h2 id="location-heading">Perfectly Located in Warwickshire</h2>
+                <div class="gold-line"></div>
+                <p>Just 3 miles from Stratford-upon-Avon and easily accessible from the M40 motorway.</p>
+            </div>
+
+            <div class="location-section__inner">
+
+                <!-- Map -->
+                <div class="location-section__map reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78985.97!2d-1.7073!3d52.1936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870d4b1e9e1b4b5%3A0x1234567890abcdef!2sStratford-upon-Avon%2C%20UK!5e0!3m2!1sen!2suk!4v1234567890"
+                        title="Kings Court Hotel location map — near Stratford-upon-Avon, Warwickshire" allowfullscreen
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Info -->
+                <div class="location-section__info reveal reveal--delay-2">
+                    <span class="section-label">Address &amp; Directions</span>
+                    <h3>Kings Court Hotel</h3>
+                    <div class="gold-line gold-line--left"></div>
+                    <p>
+                        Set within 40 acres of private Warwickshire countryside, Kings Court is the perfect
+                        base for exploring Shakespeare's birthplace, the Cotswolds, and beyond.
+                    </p>
+
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="location-detail__icon" aria-hidden="true"><i
+                                    class="fa-solid fa-location-dot"></i></span>
+                            <div>
+                                <span class="location-detail__label">Address</span>
+                                <span class="location-detail__value">Kings Court Lane,
+                                    Welford-on-Avon,<br>Stratford-upon-Avon, CV37 8EX</span>
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <span class="location-detail__icon" aria-hidden="true"><i
+                                    class="fa-solid fa-car"></i></span>
+                            <div>
+                                <span class="location-detail__label">By Car</span>
+                                <span class="location-detail__value">3 miles from Stratford-upon-Avon · 5 mins from M40
+                                    J15</span>
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <span class="location-detail__icon" aria-hidden="true"><i
+                                    class="fa-solid fa-train"></i></span>
+                            <div>
+                                <span class="location-detail__label">By Train</span>
+                                <span class="location-detail__value">Stratford-upon-Avon station (3 miles) · Warwick
+                                    Parkway (8 miles)</span>
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <span class="location-detail__icon" aria-hidden="true"><i
+                                    class="fa-solid fa-plane"></i></span>
+                            <div>
+                                <span class="location-detail__label">By Air</span>
+                                <span class="location-detail__value">Birmingham Airport (22 miles) · London Heathrow (85
+                                    miles)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="location.html" class="btn btn--ghost-gold" id="location-btn">
+                        <i class="fa-solid fa-map" aria-hidden="true"></i>
+                        Full Directions &amp; Parking
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="container">
+
+            <div class="footer__top">
+
+                <!-- Brand -->
+                <div class="footer__brand">
+                    <div class="footer__brand-name">Kings Court</div>
+                    <div class="footer__brand-tagline">Hotel &amp; Estate · Est. 1642</div>
+                    <p class="footer__brand-desc">
+                        A magnificent Tudor manor house set within 40 acres of private Warwickshire countryside.
+                        Where history, luxury, and nature unite.
+                    </p>
+                    <div class="footer__social" aria-label="Social media links">
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Twitter/X">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Watch us on YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Explore -->
+                <nav aria-label="Explore footer navigation">
+                    <div class="footer__col-title">Explore</div>
+                    <ul class="footer__links" role="list">
+                        <li><a href="rooms.html" class="footer__link">Rooms &amp; Suites</a></li>
+                        <li><a href="dining.html" class="footer__link">Dining</a></li>
+                        <li><a href="weddings.html" class="footer__link">Weddings</a></li>
+                        <li><a href="events.html" class="footer__link">Events &amp; Meetings</a></li>
+                        <li><a href="offers.html" class="footer__link">Special Offers</a></li>
+                        <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+                        <li><a href="blog.html" class="footer__link">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Information -->
+                <nav aria-label="Information footer navigation">
+                    <div class="footer__col-title">Information</div>
+                    <ul class="footer__links" role="list">
+                        <li><a href="about.html" class="footer__link">About Us</a></li>
+                        <li><a href="location.html" class="footer__link">Location &amp; Directions</a></li>
+                        <li><a href="testimonials.html" class="footer__link">Guest Reviews</a></li>
+                        <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                        <li><a href="privacy-policy.html" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer__link">Terms &amp; Conditions</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contact -->
+                <div>
+                    <div class="footer__col-title">Contact</div>
+                    <div class="footer__contact-item">
+                        <span class="footer__contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+441789123456" class="footer__contact-text">+44 (0)1789 123 456</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <span class="footer__contact-icon" aria-hidden="true"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        <a href="mailto:reservations@kingscourt.co.uk"
+                            class="footer__contact-text">reservations@kingscourt.co.uk</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <span class="footer__contact-icon" aria-hidden="true"><i
+                                class="fa-solid fa-location-dot"></i></span>
+                        <span class="footer__contact-text">Kings Court Lane, Welford-on-Avon,<br>Stratford-upon-Avon,
+                            CV37 8EX</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <span class="footer__contact-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+                        <span class="footer__contact-text">Reception: 24 hours<br>Check-in: 3pm · Check-out: 11am</span>
+                    </div>
+                </div>
+
+            </div><!-- /.footer__top -->
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; <span id="footer-year"></span> Kings Court Hotel Ltd. All rights reserved.
+                </p>
+                <div class="footer__legal">
+                    <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="terms.html" class="footer__legal-link">Terms &amp; Conditions</a>
+                    <a href="sitemap.xml" class="footer__legal-link">Sitemap</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ── Footer Year Script ── -->
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- ── JavaScript ── -->
+    <script src="js/main.js" defer></script>
+    <script src="js/booking.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/animations.js" defer></script>
+
+</body>
+
+</html>

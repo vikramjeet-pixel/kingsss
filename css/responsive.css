@@ -1,0 +1,270 @@
+/* ============================================================
+   RESPONSIVE.CSS — Kings Court Hotel
+   Mobile-first breakpoints
+   ============================================================ */
+
+/* ── Breakpoints:
+   sm:  640px
+   md:  768px
+   lg:  1024px
+   xl:  1280px
+   ──────────────────────────────────────── */
+
+/* ── Large Desktop (1280px+) ── */
+@media (min-width: 1280px) {
+    .container {
+        padding: 0 3rem;
+    }
+}
+
+/* ── Tablet Landscape (max 1024px) ── */
+@media (max-width: 1024px) {
+    :root {
+        --space-xl: 4rem;
+        --space-xxl: 7rem;
+    }
+
+    /* Nav */
+    .nav__links {
+        gap: 1.25rem;
+    }
+
+    /* Intro */
+    .intro-section__inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .intro-section__image-wrap {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .intro-section__content {
+        padding-left: 0;
+    }
+
+    /* Dining */
+    .dining-section__inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .dining-section__content {
+        padding-left: 0;
+    }
+
+    /* Location */
+    .location-section__inner {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer__top {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-md);
+    }
+}
+
+/* ── Tablet Portrait (max 768px) ── */
+@media (max-width: 768px) {
+    :root {
+        --space-lg: 3rem;
+        --space-xl: 3.5rem;
+    }
+
+    /* Nav */
+    .nav__links,
+    .nav__cta {
+        display: none;
+    }
+
+    .nav__hamburger {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+    }
+
+    .hero__booking {
+        width: 95%;
+        bottom: -1rem;
+    }
+
+    /* Booking Bar */
+    .booking-bar {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-sm);
+        padding: 1.25rem;
+    }
+
+    .booking-bar__field {
+        padding: 0 0.75rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(194, 164, 94, 0.2);
+        padding-bottom: 0.75rem;
+    }
+
+    .booking-bar__btn {
+        grid-column: 1 / -1;
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Grids */
+    .grid--3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid--4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .split {
+        grid-template-columns: 1fr;
+    }
+
+    /* Intro features */
+    .intro-section__features {
+        grid-template-columns: 1fr;
+    }
+
+    /* Weddings */
+    .weddings-section__content {
+        max-width: 100%;
+    }
+
+    /* Dining highlights */
+    .dining-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    /* Trust strip */
+    .trust-strip__inner {
+        gap: 2rem;
+    }
+
+    /* Offers strip */
+    .offers-strip__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+/* ── Mobile (max 640px) ── */
+@media (max-width: 640px) {
+    :root {
+        --space-lg: 2.5rem;
+        --space-xl: 3rem;
+    }
+
+    /* Nav */
+    .nav {
+        padding: 0 1rem;
+    }
+
+    /* Hero */
+    .hero__ctas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__ctas .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .hero__booking {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 100svh;
+        padding-bottom: 2rem;
+        align-items: flex-end;
+    }
+
+    .hero__content {
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Booking bar */
+    .booking-bar {
+        grid-template-columns: 1fr;
+        border-radius: var(--radius-sm);
+    }
+
+    .booking-bar__field {
+        border-right: none;
+    }
+
+    /* Grids */
+    .grid--2,
+    .grid--3,
+    .grid--4 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Intro image accent */
+    .intro-section__image-accent {
+        display: none;
+    }
+
+    /* Testimonial */
+    .testimonial-card {
+        padding: var(--space-md);
+    }
+
+    .testimonial-card__quote {
+        font-size: 1.1rem;
+    }
+
+    /* Section header */
+    .section-header {
+        margin-bottom: var(--space-md);
+    }
+
+    /* Container */
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    /* Trust strip */
+    .trust-strip__inner {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
