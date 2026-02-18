@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore our 38 individually designed rooms and suites at Kings Court Hotel — from Classic Standard rooms to opulent Signature Suites, each blending Tudor character with modern luxury." />
+    <meta name="keywords"
+        content="luxury hotel rooms, Tudor hotel suites, Stratford-upon-Avon accommodation, country house hotel rooms, Warwickshire hotel" />
+    <meta property="og:title" content="Rooms & Suites — Kings Court Hotel" />
+    <meta property="og:description"
+        content="38 individually designed rooms and suites blending Tudor character with contemporary luxury." />
+    <meta property="og:type" content="website" />
+    <title>Rooms &amp; Suites | Kings Court Hotel — Tudor Country Escape</title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/rooms-page.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════ -->
+    <nav class="nav nav--scrolled" id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav__logo" aria-label="Kings Court Hotel Home">
+            <span class="nav__logo-name">Kings Court</span>
+            <span class="nav__logo-tagline">Hotel &amp; Estate</span>
+        </a>
+
+        <ul class="nav__links" role="list">
+            <li><a href="rooms.html" class="nav__link" aria-current="page">Rooms</a></li>
+            <li><a href="dining.html" class="nav__link">Dining</a></li>
+            <li><a href="weddings.html" class="nav__link">Weddings</a></li>
+            <li><a href="events.html" class="nav__link">Events</a></li>
+            <li><a href="offers.html" class="nav__link">Offers</a></li>
+            <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+        </ul>
+
+        <a href="booking.html" class="nav__cta" id="nav-book-btn">Book Now</a>
+
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
+        <a href="rooms.html" class="nav__mobile-link">Rooms</a>
+        <a href="dining.html" class="nav__mobile-link">Dining</a>
+        <a href="weddings.html" class="nav__mobile-link">Weddings</a>
+        <a href="events.html" class="nav__mobile-link">Events</a>
+        <a href="offers.html" class="nav__mobile-link">Offers</a>
+        <a href="gallery.html" class="nav__mobile-link">Gallery</a>
+        <a href="about.html" class="nav__mobile-link">About</a>
+        <a href="contact.html" class="nav__mobile-link">Contact</a>
+        <a href="booking.html" class="btn btn--primary" style="margin-top:1rem;">Book Your Stay</a>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+       PAGE HERO
+    ═══════════════════════════════════════ -->
+    <section class="page-hero" id="rooms-hero" aria-label="Rooms and Suites hero">
+        <div class="page-hero__bg">
+            <img src="assets/images/rooms/room-suite.jpg"
+                alt="Luxurious suite interior at Kings Court Hotel with four-poster bed" fetchpriority="high" />
+        </div>
+        <div class="page-hero__overlay" aria-hidden="true"></div>
+        <div class="page-hero__content">
+            <span class="section-label" style="color: var(--clr-gold-light);">Accommodation</span>
+            <span class="page-hero__script">Rest &amp; Restore</span>
+            <h1 class="page-hero__title">Rooms &amp; Suites</h1>
+            <div class="page-hero__divider" aria-hidden="true">
+                <span class="page-hero__divider-line"></span>
+                <span class="page-hero__divider-icon">✦</span>
+                <span class="page-hero__divider-line"></span>
+            </div>
+            <p class="page-hero__subtitle">
+                38 individually designed rooms, each a unique blend of Tudor heritage and contemporary luxury
+            </p>
+            <div class="page-hero__breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span aria-hidden="true">›</span>
+                <span aria-current="page">Rooms &amp; Suites</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       INTRO STRIP
+    ═══════════════════════════════════════ -->
+    <section class="rooms-intro" aria-label="Rooms introduction">
+        <div class="container">
+            <div class="rooms-intro__inner">
+                <div class="rooms-intro__stat reveal">
+                    <span class="rooms-intro__stat-num">38</span>
+                    <span class="rooms-intro__stat-label">Unique Rooms</span>
+                </div>
+                <div class="rooms-intro__divider" aria-hidden="true"></div>
+                <div class="rooms-intro__stat reveal reveal--delay-1">
+                    <span class="rooms-intro__stat-num">3</span>
+                    <span class="rooms-intro__stat-label">Room Categories</span>
+                </div>
+                <div class="rooms-intro__divider" aria-hidden="true"></div>
+                <div class="rooms-intro__stat reveal reveal--delay-2">
+                    <span class="rooms-intro__stat-num">40</span>
+                    <span class="rooms-intro__stat-label">Acres of Grounds</span>
+                </div>
+                <div class="rooms-intro__divider" aria-hidden="true"></div>
+                <div class="rooms-intro__stat reveal reveal--delay-3">
+                    <span class="rooms-intro__stat-num">4★</span>
+                    <span class="rooms-intro__stat-label">AA Rated</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       ROOMS GRID SECTION
+    ═══════════════════════════════════════ -->
+    <section class="rooms-listing section" id="rooms-listing" aria-labelledby="rooms-listing-heading">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="section-header reveal">
+                <span class="section-label">Our Accommodation</span>
+                <span class="script-accent">Find Your Perfect Room</span>
+                <h2 id="rooms-listing-heading">Rooms &amp; Suites</h2>
+                <div class="gold-line"></div>
+                <p>Each of our rooms is individually designed, blending original Tudor features — exposed oak beams,
+                    stone fireplaces, mullioned windows — with every modern comfort.</p>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="rooms-filter" id="rooms-filter" role="group" aria-label="Filter rooms by category">
+                <button class="rooms-filter__btn rooms-filter__btn--active" data-filter="all" id="filter-all"
+                    aria-pressed="true">
+                    <i class="fa-solid fa-border-all" aria-hidden="true"></i>
+                    All Rooms
+                    <span class="rooms-filter__count" id="count-all">9</span>
+                </button>
+                <button class="rooms-filter__btn" data-filter="standard" id="filter-standard" aria-pressed="false">
+                    <i class="fa-solid fa-bed" aria-hidden="true"></i>
+                    Standard
+                    <span class="rooms-filter__count" id="count-standard">3</span>
+                </button>
+                <button class="rooms-filter__btn" data-filter="superior" id="filter-superior" aria-pressed="false">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    Superior
+                    <span class="rooms-filter__count" id="count-superior">3</span>
+                </button>
+                <button class="rooms-filter__btn" data-filter="family" id="filter-family" aria-pressed="false">
+                    <i class="fa-solid fa-people-roof" aria-hidden="true"></i>
+                    Family &amp; Suites
+                    <span class="rooms-filter__count" id="count-family">3</span>
+                </button>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="rooms-no-results" id="rooms-no-results" aria-live="polite" hidden>
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <p>No rooms found for this category.</p>
+            </div>
+
+            <!-- Rooms Grid -->
+            <div class="rooms-grid" id="rooms-grid" aria-label="Room listings">
+
+                <!-- ── STANDARD ROOMS ── -->
+
+                <!-- Standard 1: Classic Room -->
+                <article class="room-card reveal" data-category="standard" id="room-classic">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-classic.jpg"
+                            alt="Classic Room with original stone walls, exposed beams and window seat"
+                            loading="lazy" />
+                        <span class="room-card__badge room-card__badge--standard">Standard</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Standard Room</div>
+                        <h3 class="room-card__title">Classic Room</h3>
+                        <p class="room-card__desc">
+                            Intimate and cosy, with original stone walls, exposed timber beams, and a window seat
+                            overlooking the courtyard garden. Perfect for a romantic retreat or solo traveller.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i> King
+                                Bed</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free
+                                Wi-Fi</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-tv" aria-hidden="true"></i> Smart
+                                TV</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Tea
+                                &amp; Coffee</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£145</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=classic" class="btn btn--dark" id="room-classic-detail-btn"
+                                aria-label="View details for Classic Room">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Standard 2: Garden Room -->
+                <article class="room-card reveal reveal--delay-1" data-category="standard" id="room-garden">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-classic.jpg"
+                            alt="Garden Room with views of the walled garden and countryside" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--standard">Standard</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Standard Room</div>
+                        <h3 class="room-card__title">Garden Room</h3>
+                        <p class="room-card__desc">
+                            Light-filled and tranquil, with French doors opening onto a private patio overlooking
+                            the walled kitchen garden. A peaceful sanctuary in the heart of the estate.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i> King
+                                Bed</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-door-open" aria-hidden="true"></i>
+                                Private Patio</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free
+                                Wi-Fi</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-bath" aria-hidden="true"></i>
+                                En-Suite Bath</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£155</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=garden" class="btn btn--dark" id="room-garden-detail-btn"
+                                aria-label="View details for Garden Room">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Standard 3: Courtyard Room -->
+                <article class="room-card reveal reveal--delay-2" data-category="standard" id="room-courtyard">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-deluxe.jpg"
+                            alt="Courtyard Room with Tudor beams and courtyard views" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--standard">Standard</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Standard Room</div>
+                        <h3 class="room-card__title">Courtyard Room</h3>
+                        <p class="room-card__desc">
+                            Nestled within the original Tudor courtyard, this charming room features original
+                            flagstone floors, a cast-iron radiator, and views of the historic cobbled courtyard.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i> Double
+                                Bed</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free
+                                Wi-Fi</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-tv" aria-hidden="true"></i> Smart
+                                TV</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Tea
+                                &amp; Coffee</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£135</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=courtyard" class="btn btn--dark"
+                                id="room-courtyard-detail-btn" aria-label="View details for Courtyard Room">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ── SUPERIOR ROOMS ── -->
+
+                <!-- Superior 1: Deluxe Room -->
+                <article class="room-card reveal" data-category="superior" id="room-deluxe">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-deluxe.jpg"
+                            alt="Deluxe Room with four-poster bed and stone fireplace" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--popular">Most Popular</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Superior Room</div>
+                        <h3 class="room-card__title">Deluxe Room</h3>
+                        <p class="room-card__desc">
+                            Beautifully appointed with a four-poster bed, exposed oak beams, and a working stone
+                            fireplace. Mullioned windows frame views of the walled garden and rolling parkland.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i> King
+                                Four-Poster</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-fire" aria-hidden="true"></i>
+                                Fireplace</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-eye" aria-hidden="true"></i> Garden
+                                View</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free
+                                Wi-Fi</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£195</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=deluxe" class="btn btn--dark" id="room-deluxe-detail-btn"
+                                aria-label="View details for Deluxe Room">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Superior 2: Manor Room -->
+                <article class="room-card reveal reveal--delay-1" data-category="superior" id="room-manor">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-suite.jpg"
+                            alt="Manor Room with antique furnishings and estate views" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--superior">Superior</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Superior Room</div>
+                        <h3 class="room-card__title">Manor Room</h3>
+                        <p class="room-card__desc">
+                            Spacious and elegantly furnished with antique writing desk, velvet armchair, and a
+                            roll-top bath. Panoramic views across the estate's parkland and ancient woodland.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i>
+                                Super-King Bed</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-bath" aria-hidden="true"></i>
+                                Roll-top Bath</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-eye" aria-hidden="true"></i> Parkland
+                                View</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-fire" aria-hidden="true"></i>
+                                Fireplace</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£225</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=manor" class="btn btn--dark" id="room-manor-detail-btn"
+                                aria-label="View details for Manor Room">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Superior 3: Tudor Room -->
+                <article class="room-card reveal reveal--delay-2" data-category="superior" id="room-tudor">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-classic.jpg"
+                            alt="Tudor Room with original timber frame and inglenook fireplace" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--superior">Superior</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Superior Room</div>
+                        <h3 class="room-card__title">Tudor Room</h3>
+                        <p class="room-card__desc">
+                            Set within the oldest part of the manor, this room features an original inglenook
+                            fireplace, hand-carved oak panelling, and a luxurious rainfall shower.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i> King
+                                Bed</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-fire" aria-hidden="true"></i>
+                                Inglenook Fire</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-shower" aria-hidden="true"></i>
+                                Rainfall Shower</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free
+                                Wi-Fi</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£215</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=tudor" class="btn btn--dark" id="room-tudor-detail-btn"
+                                aria-label="View details for Tudor Room">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ── FAMILY & SUITES ── -->
+
+                <!-- Family 1: Signature Suite -->
+                <article class="room-card reveal" data-category="family" id="room-signature">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-suite.jpg"
+                            alt="Signature Suite with Chesterfield sofas and private terrace" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--suite">Signature Suite</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Suite</div>
+                        <h3 class="room-card__title">Signature Suite</h3>
+                        <p class="room-card__desc">
+                            Our grandest accommodation. A separate sitting room with Chesterfield sofas, antique
+                            writing desk, and a private terrace overlooking the estate grounds.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-couch" aria-hidden="true"></i>
+                                Sitting Room</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-door-open" aria-hidden="true"></i>
+                                Private Terrace</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-concierge-bell"
+                                    aria-hidden="true"></i> Butler Service</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-bath" aria-hidden="true"></i>
+                                Roll-top Bath</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£395</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=suite" class="btn btn--dark" id="room-signature-detail-btn"
+                                aria-label="View details for Signature Suite">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Family 2: Family Suite -->
+                <article class="room-card reveal reveal--delay-1" data-category="family" id="room-family">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-deluxe.jpg"
+                            alt="Family Suite with interconnecting rooms and children's amenities" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--family">Family</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Family Suite</div>
+                        <h3 class="room-card__title">Family Suite</h3>
+                        <p class="room-card__desc">
+                            Two interconnecting rooms — a master bedroom with king bed and a children's room with
+                            twin beds. Includes a shared lounge area, perfect for family holidays.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i> King +
+                                Twin Beds</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-people-roof" aria-hidden="true"></i>
+                                Sleeps 4</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-couch" aria-hidden="true"></i> Lounge
+                                Area</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free
+                                Wi-Fi</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£295</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=family" class="btn btn--dark" id="room-family-detail-btn"
+                                aria-label="View details for Family Suite">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Family 3: Royal Suite -->
+                <article class="room-card reveal reveal--delay-2" data-category="family" id="room-royal">
+                    <div class="room-card__image">
+                        <img src="assets/images/rooms/room-suite.jpg"
+                            alt="Royal Suite with grand four-poster bed and panoramic estate views" loading="lazy" />
+                        <span class="room-card__badge room-card__badge--suite">Royal Suite</span>
+                        <div class="room-card__image-overlay" aria-hidden="true">
+                            <span class="room-card__quick-view">Quick View</span>
+                        </div>
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__category-tag">Suite</div>
+                        <h3 class="room-card__title">Royal Suite</h3>
+                        <p class="room-card__desc">
+                            The pinnacle of luxury at Kings Court. A grand two-bedroom suite with a private dining
+                            room, butler's pantry, and sweeping views across the entire estate.
+                        </p>
+                        <div class="room-card__amenities" aria-label="Room amenities">
+                            <span class="room-card__amenity"><i class="fa-solid fa-bed" aria-hidden="true"></i> 2
+                                Bedrooms</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                                Private Dining</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-concierge-bell"
+                                    aria-hidden="true"></i> 24hr Butler</span>
+                            <span class="room-card__amenity"><i class="fa-solid fa-eye" aria-hidden="true"></i> Estate
+                                Views</span>
+                        </div>
+                        <div class="room-card__footer">
+                            <div class="room-card__price">
+                                <span class="room-card__price-from">From</span>
+                                <span class="room-card__price-amount">£595</span>
+                                <span class="room-card__price-night">per night</span>
+                            </div>
+                            <a href="room-detail.html?room=royal" class="btn btn--dark" id="room-royal-detail-btn"
+                                aria-label="View details for Royal Suite">
+                                View Details
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div><!-- /.rooms-grid -->
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       AMENITIES STRIP
+    ═══════════════════════════════════════ -->
+    <section class="amenities-strip" aria-label="Hotel amenities">
+        <div class="container">
+            <div class="amenities-strip__inner">
+                <div class="amenity-item reveal">
+                    <div class="amenity-item__icon" aria-hidden="true"><i class="fa-solid fa-spa"></i></div>
+                    <div class="amenity-item__text">
+                        <strong>Luxury Spa</strong>
+                        <span>Treatments &amp; wellness</span>
+                    </div>
+                </div>
+                <div class="amenity-item reveal reveal--delay-1">
+                    <div class="amenity-item__icon" aria-hidden="true"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="amenity-item__text">
+                        <strong>Fine Dining</strong>
+                        <span>Award-winning restaurant</span>
+                    </div>
+                </div>
+                <div class="amenity-item reveal reveal--delay-2">
+                    <div class="amenity-item__icon" aria-hidden="true"><i class="fa-solid fa-dumbbell"></i></div>
+                    <div class="amenity-item__text">
+                        <strong>Fitness Centre</strong>
+                        <span>State-of-the-art gym</span>
+                    </div>
+                </div>
+                <div class="amenity-item reveal reveal--delay-3">
+                    <div class="amenity-item__icon" aria-hidden="true"><i class="fa-solid fa-tree"></i></div>
+                    <div class="amenity-item__text">
+                        <strong>40-Acre Grounds</strong>
+                        <span>Gardens &amp; woodland walks</span>
+                    </div>
+                </div>
+                <div class="amenity-item reveal reveal--delay-4">
+                    <div class="amenity-item__icon" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
+                    <div class="amenity-item__text">
+                        <strong>Free Parking</strong>
+                        <span>On-site for all guests</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       BOOKING CTA STRIP
+    ═══════════════════════════════════════ -->
+    <section class="rooms-cta" aria-labelledby="rooms-cta-heading">
+        <div class="rooms-cta__bg" aria-hidden="true">
+            <img src="assets/images/rooms/room-deluxe.jpg" alt="" />
+        </div>
+        <div class="rooms-cta__overlay" aria-hidden="true"></div>
+        <div class="container">
+            <div class="rooms-cta__inner reveal">
+                <span class="section-label" style="color: var(--clr-gold-light);">Ready to Book?</span>
+                <span class="script-accent" style="color: var(--clr-gold);">Your Stay Awaits</span>
+                <h2 id="rooms-cta-heading" style="color: var(--clr-cream);">Reserve Your Room Today</h2>
+                <div class="gold-line" style="margin: 1.5rem auto;"></div>
+                <p style="color: rgba(245,241,232,0.8); max-width: 520px; margin: 0 auto 2.5rem;">
+                    Book directly with us for the best rates, complimentary extras, and our personal welcome.
+                    Flexible cancellation available on most room types.
+                </p>
+                <div class="rooms-cta__btns">
+                    <a href="booking.html" class="btn btn--primary" id="rooms-cta-book-btn">
+                        <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                        Check Availability
+                    </a>
+                    <a href="contact.html" class="btn btn--secondary" id="rooms-cta-contact-btn">
+                        Speak to Our Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="container">
+
+            <div class="footer__top">
+
+                <!-- Brand -->
+                <div class="footer__brand">
+                    <div class="footer__brand-name">Kings Court</div>
+                    <div class="footer__brand-tagline">Hotel &amp; Estate · Est. 1642</div>
+                    <p class="footer__brand-desc">
+                        A magnificent Tudor manor house set within 40 acres of private Warwickshire countryside.
+                        Where history, luxury, and nature unite.
+                    </p>
+                    <div class="footer__social" aria-label="Social media links">
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Twitter/X">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Watch us on YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Explore -->
+                <nav aria-label="Explore footer navigation">
+                    <div class="footer__col-title">Explore</div>
+                    <ul class="footer__links" role="list">
+                        <li><a href="rooms.html" class="footer__link">Rooms &amp; Suites</a></li>
+                        <li><a href="dining.html" class="footer__link">Dining</a></li>
+                        <li><a href="weddings.html" class="footer__link">Weddings</a></li>
+                        <li><a href="events.html" class="footer__link">Events &amp; Meetings</a></li>
+                        <li><a href="offers.html" class="footer__link">Special Offers</a></li>
+                        <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Information -->
+                <nav aria-label="Information footer navigation">
+                    <div class="footer__col-title">Information</div>
+                    <ul class="footer__links" role="list">
+                        <li><a href="about.html" class="footer__link">About Us</a></li>
+                        <li><a href="location.html" class="footer__link">Location &amp; Directions</a></li>
+                        <li><a href="testimonials.html" class="footer__link">Guest Reviews</a></li>
+                        <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                        <li><a href="privacy-policy.html" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contact -->
+                <div>
+                    <div class="footer__col-title">Contact</div>
+                    <div class="footer__contact-item">
+                        <span class="footer__contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+441789123456" class="footer__contact-text">+44 (0)1789 123 456</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <span class="footer__contact-icon" aria-hidden="true"><i
+                                class="fa-solid fa-envelope"></i></span>
+                        <a href="mailto:reservations@kingscourt.co.uk"
+                            class="footer__contact-text">reservations@kingscourt.co.uk</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <span class="footer__contact-icon" aria-hidden="true"><i
+                                class="fa-solid fa-location-dot"></i></span>
+                        <span class="footer__contact-text">Kings Court Lane, Welford-on-Avon,<br>Stratford-upon-Avon,
+                            CV37 8EX</span>
+                    </div>
+                </div>
+
+            </div><!-- /.footer__top -->
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Kings Court Hotel &amp; Estate. All rights reserved.
+                </p>
+                <div class="footer__legal">
+                    <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="terms.html" class="footer__legal-link">Terms &amp; Conditions</a>
+                    <a href="sitemap.html" class="footer__legal-link">Sitemap</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ═══════════════════════════════════════
+       SCRIPTS
+    ═══════════════════════════════════════ -->
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
+
+</body>
+
+</html>
